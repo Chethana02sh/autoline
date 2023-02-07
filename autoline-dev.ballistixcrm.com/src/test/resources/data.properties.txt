@@ -1,0 +1,4 @@
+url https://autoline-dev.ballistixcrm.com
+username admin
+password 0872CVOnWEMTFyAq
+browser chrome
