@@ -3,14 +3,15 @@ package com.crm.campaignObjectRepository;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.crm.genericUtilities.WebDriverUtility;
-
 public class CampaignPage {
 
-	@FindBy(id = "Campaigns_listView_basicAction_LBL_ADD_RECORD") private WebElement addCampaignbtn;
+	//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']
+
+	@FindAll({@FindBy(xpath = "//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']"),@FindBy(id = "Campaigns_listView_basicAction_LBL_ADD_RECORD")})private WebElement addCampaignbtn;
 	
 	@FindBy(id = "Campaigns_listView_massAction_LBL_DELETE") private WebElement deleteBtnClick;
 	

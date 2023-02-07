@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AddCampaignPage {
 
+	
 	@FindBy(id = "Campaigns_editView_fieldName_campaignname") private WebElement campaignNameEdtTxt;
 	
 	@FindBy(xpath = "//td[contains(.,'Campaign Status')]/..//div[@id='s2id_autogen3']") private WebElement selectCampaignStatusDropdown;
