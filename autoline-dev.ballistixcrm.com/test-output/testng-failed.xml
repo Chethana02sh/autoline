@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="classes" name="Test(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.crm.Leads.CreateLeadEditLeadDeleteLead">
+      <class name="com.crm.createCampaigns.CreateCampaignTest">
         <methods>
-          <include name="createLeadEditLeadDeleteLead"/>
+          <include name="createCampaignTest"/>
           <include name="logoutFromAppln"/>
           <include name="closeDBconfig"/>
           <include name="loginToAppln"/>
@@ -13,40 +13,7 @@
           <include name="launchTheBrowser"/>
           <include name="dbConfig"/>
         </methods>
-      </class> <!-- com.crm.Leads.CreateLeadEditLeadDeleteLead -->
-      <class name="com.crm.organisation.CreateEditDeleteOrganisation">
-        <methods>
-          <include name="logoutFromAppln"/>
-          <include name="closeDBconfig"/>
-          <include name="loginToAppln"/>
-          <include name="createEditDeleteOrganisation"/>
-          <include name="closeTheBrowser"/>
-          <include name="launchTheBrowser"/>
-          <include name="dbConfig"/>
-        </methods>
-      </class> <!-- com.crm.organisation.CreateEditDeleteOrganisation -->
-      <class name="com.crm.Opportunity.CreateEditDeleteOpportunity">
-        <methods>
-          <include name="logoutFromAppln"/>
-          <include name="closeDBconfig"/>
-          <include name="loginToAppln"/>
-          <include name="createEditDeleteOpportunity"/>
-          <include name="closeTheBrowser"/>
-          <include name="launchTheBrowser"/>
-          <include name="dbConfig"/>
-        </methods>
-      </class> <!-- com.crm.Opportunity.CreateEditDeleteOpportunity -->
-      <class name="com.crm.SalesProduct.CreateEditDeleteProduct">
-        <methods>
-          <include name="logoutFromAppln"/>
-          <include name="closeDBconfig"/>
-          <include name="loginToAppln"/>
-          <include name="closeTheBrowser"/>
-          <include name="createEditDeleteProduct"/>
-          <include name="launchTheBrowser"/>
-          <include name="dbConfig"/>
-        </methods>
-      </class> <!-- com.crm.SalesProduct.CreateEditDeleteProduct -->
+      </class> <!-- com.crm.createCampaigns.CreateCampaignTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

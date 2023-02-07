@@ -11,7 +11,7 @@ public class CampaignPage {
 
 	//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']
 
-	@FindAll({@FindBy(xpath = "//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']"),@FindBy(id = "Campaigns_listView_basicAction_LBL_ADD_RECORD")})private WebElement addCampaignbtn;
+	@FindAll({@FindBy(xpath = "//button[@id='Campaigns_listView_basicAction_LBL_ADD_RECORD']"),@FindBy(xpath = "//button[@onclick='window.location.href = \"index.php?module=Campaigns&view=Edit&app=MARKETING\"']")})private WebElement addCampaignbtn;
 	
 	@FindBy(id = "Campaigns_listView_massAction_LBL_DELETE") private WebElement deleteBtnClick;
 	
